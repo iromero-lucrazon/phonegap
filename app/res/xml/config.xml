@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <widget>
+        <plugins>
+            <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+        </plugins>
+        <access origin="*" />
+    </widget>
