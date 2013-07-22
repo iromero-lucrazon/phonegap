@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="index.css" /> 
 
         <script src="jquery.mobile/jquery-1.7.2.min"></script>
-        <script src="jquery.mobile/jquery.mobile{$jqmversion}.min.js"></script>
+        <script src="jquery.mobile/jquery.moz`bile{$jqmversion}.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         <script type="text/javascript" charset="utf-8" src="index.js"></script>
     </head>
@@ -19,29 +19,32 @@
 
             <div data-role="header" data-theme="b">
                 <h1>Lucrazon Merchant App</h1>
-                <a href="#" data-icon="home" data-iconpos="notext" id="intro" class="ui-btn-right">intro</a>
             </div>
 
             <div data-role="content" data-theme="c">	
-                
+
                 <div class="content-primary">
-                    
+
                     <div class="api-div" id="api-camera">
                         <h2>Bank Check Image</h2>
                         <h4 class="help">Please use this app to send Lucrazon an image of a voided check to be attached to your merchant application.</h4>
                         <div class="ui-grid-a">
                             <input type="button" value="Take Picture" onclick="take_pic();">
                             <input type="button" value="Browse Images" onclick="album_pic();">
+                            <div class="ui-block-a"><div data-role="button" onclick="take_pic();">Take a Picture</div></div>
+                            <div class="ui-block-b"><div data-role="button" onclick="album_pic();">Select</div></div>
                         </div>				
                         <img id="cameraImage" src="" />
                     </div>
 
                 </div>
-                
+
             </div>
+
             <div data-role="footer" data-position="fixed" class="footer-docs" data-theme="b">
                 <p>&copy; 2013 Lucrazon eCommerce</p>
-            </div>	
+            </div>
+
         </div>	
         <script type="text/javascript" charset="utf-8" src="apis/accelerometer.js"></script>
         <script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
