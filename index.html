@@ -1,9 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <title>File Transfer Example</title>
-
-    <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+    <title>Lucrazon MICA</title>
+ 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    
+    <!-- <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script> -->
     <script type="text/javascript" charset="utf-8">
 
         // Wait for PhoneGap to load
@@ -53,9 +57,39 @@
         }
 
         </script>
+    
+        <script type="text/javascript" charset="utf-8" src="apis/accelerometer.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/compass.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/connection.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/contacts.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/device.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/events.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/geolocation.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/media.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/notification.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/storage.js"></script> 		
 </head>
 <body>
-    <h1>Example</h1>
-    <p>Upload File</p>
+
+<div data-role="page">
+        
+
+    <div data-role="header">
+        <h1>Mobile Image Capture App</h1>
+    </div>
+    
+    <div data-role="content">
+        <a onclick="javascript:onDeviceReady();" data-role="button">Take Photo</a>
+    </div>
+    
+    <div data-role="footer">
+        <h4>Copyright 2013<br>Lucrazon ECommerce</h4>
+    </div>
+
+</div>
+    
 </body>
 </html>
