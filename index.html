@@ -12,7 +12,12 @@
 
         // Wait for PhoneGap to load
         //
-        document.addEventListener("deviceready", onDeviceReady, false);
+        //document.addEventListener("deviceready", onDeviceReady, false);
+        
+        
+        $('#take_photo_button').on("click", function(event) {
+            onDeviceReady();
+        });
 
         // PhoneGap is ready
         //
@@ -82,7 +87,7 @@
     </div>
     
     <div data-role="content">
-        <a onclick="javascript:onDeviceReady();" data-role="button">Take Photo</a>
+        <a id="take_photo_button" data-role="button">Take Photo</a>
     </div>
     
     <div data-role="footer">
