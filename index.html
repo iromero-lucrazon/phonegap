@@ -29,7 +29,7 @@
         //document.addEventListener("deviceready", onDeviceReady, false);
         
         
-        $('#take_photo_button').click(function(event) {
+        function takePhoto() {
             alert('clicked');
             
             // Retrieve image file location from specified source
@@ -39,7 +39,7 @@
                                         destinationType: navigator.camera.DestinationType.FILE_URI,
                                         sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY }
                                         );
-        });
+        }
 
         function uploadPhoto(imageURI) {
             var options = new FileUploadOptions();
@@ -80,7 +80,7 @@
     </div>
     
     <div data-role="content">
-        <div id="take_photo_button" data-role="button">Take Photo"</div>
+        <div data-role="button" onclick="">Take Photo"</div>
     </div>
     
     <div data-role="footer">
