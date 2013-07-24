@@ -16,9 +16,24 @@
         //document.addEventListener("deviceready", onDeviceReady, false);
         
         
-        function takePhoto() {
-            alert('clicked');
-            
+        function takePhoto() {            
+            try {
+            // Retrieve image file location from specified source
+            navigator.camera.getPicture(uploadPhoto,
+                                        function(message) { alert('get picture failed'); },
+                                        { 
+                                            quality: 50, 
+                                            destinationType: navigator.camera.DestinationType.FILE_URI,
+                                            sourceType: navigator.camera.PictureSourceType.CAMERA 
+                                        }
+                                        );
+            }
+            catch (err) {
+                alert(err);
+            }
+        }
+
+        function selectPhoto() {            
             try {
             // Retrieve image file location from specified source
             navigator.camera.getPicture(uploadPhoto,
@@ -75,6 +90,7 @@
     
     <div data-role="content">
         <div data-role="button" onclick="takePhoto();">Take Photo</div>
+        <div data-role="button" onclick="selectPhoto();">Select Photo</div>
     </div>
     
     <div data-role="footer">
