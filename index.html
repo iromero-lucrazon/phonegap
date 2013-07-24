@@ -49,6 +49,10 @@
                 alert(err);
             }
         }
+        
+        function showPhoto(imageURI)    {
+            $('#selectedImage').attr('src',imageURI);
+        }
 
         function uploadPhoto(imageURI) {
             var options = new FileUploadOptions();
