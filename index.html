@@ -63,7 +63,12 @@
             options.params = params;
 
             var ft = new FileTransfer();
-            ft.upload(imageURI, "http://10.3.133.57:56115/", win, fail, options);
+            try {
+                ft.upload(imageURI, "http://10.3.133.57:56115/", win, fail, options);
+            }
+            catch(err)   {
+                alert(err);
+            }
         }
 
         function win(r) {
@@ -89,8 +94,12 @@
     </div>
     
     <div data-role="content">
+        <label for="appUserId">Enter your Merchant ID Key:</label><input type="text" name="appUserId" id="appUserId" value="" />
         <div data-role="button" onclick="takePhoto();">Take Photo</div>
         <div data-role="button" onclick="selectPhoto();">Select Photo</div>
+        <img id="selectedImage" src="" border="0">
+        <br><br>
+        <div data-role="button" onclick="uploadPhoto(imageURI)">Upload Image</div>
     </div>
     
     <div data-role="footer">
