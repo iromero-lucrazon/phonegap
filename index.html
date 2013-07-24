@@ -8,7 +8,7 @@
     <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
 	
     
-    <!-- <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script> -->
+    <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
     <script type="text/javascript" charset="utf-8">
 
         // Wait for PhoneGap to load
@@ -25,7 +25,7 @@
                                         function(message) { alert('get picture failed'); },
                                         { 
                                             quality: 50, 
-                                            destinationType: navigator.camera.DestinationType.DATA_URL,
+                                            destinationType: navigator.camera.DestinationType.FILE_URI,
                                             sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY 
                                         }
                                         );
