@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html> 
 <html>
 <head>
     <title>Lucrazon MICA</title>
@@ -18,24 +18,23 @@
 <div data-role="page">        
 
     <div data-role="header">
-        <h1>Mobile Image Capture App</h1>
         <div style="margin: 0 auto; text-align: center;">
-            <span style="font-size: .5em;">powered by</span><br>
-        <img src="logo.png" border="0" style="max-width: 100%; max-height: 100%;" />
+            <img src="logo.png" border="0" style="max-width: 100%; max-height: 100%;" />
         </div>
+        <h1>Mobile Image Capture App</h1>
     </div>
     
     <div data-role="content">
         <label for="appUserId">Enter your Merchant ID Key:</label><input type="text" name="appUserId" id="appUserId" value="" />
-        <div data-role="button" onclick="takePhoto();">Take Photo</div>
+        <div data-role="button" onclick="takePhoto();" class="">Take Photo</div>
         <div data-role="button" onclick="selectPhoto();">Select Photo</div>
-        <img id="selectedImage" src="" border="0" style="max-width: 100%; max-height: 100%;">
+        <img id="selectedImage" src="" border="0" style="min-width: 100%; min-height: 10em; max-width: 100%; max-height: 100%; border: 5px dotted #999;">
         <br><br>
         <div data-role="button" onclick="uploadPhoto(imageURI)">Upload Image</div>
     </div>
     
-    <div data-role="footer">
-        <h4>Copyright 2013<br>Lucrazon ECommerce</h4>
+    <div data-role="footer" style="text-align: center; height: 3em;">
+        <span style="font-size: .75em;">Copyright 2013 Lucrazon ECommerce</span>
     </div>
 
 </div>

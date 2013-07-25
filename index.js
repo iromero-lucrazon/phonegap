@@ -1,6 +1,14 @@
 // Lucrazon MICA app code
 // Copyright (c) 2013 Lucrazon ECommerce, Inc.
 
+$(document).ready(function {
+   $('#').on("click",function(event) {
+      if($('#appUserId').attr('src') == "") {
+          
+      }
+   });
+});
+
 function takePhoto() {            
     try {
     // Retrieve image file location from specified source
