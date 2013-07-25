@@ -1,10 +1,11 @@
 // Lucrazon MICA app code
 // Copyright (c) 2013 Lucrazon ECommerce, Inc.
 
-$(document).ready(function {
-   $('#').on("click",function(event) {
-      if($('#appUserId').attr('src') == "") {
-          
+$(document).ready(function() {
+   $('.actionButton').on("click",function(event) {
+      if($('#appUserId').val() == "") {
+          event.preventDefault();
+          alert("Please enter your Merchant ID Key first!");
       }
    });
 });
